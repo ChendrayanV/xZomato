@@ -33,7 +33,16 @@ app.get("/CityInfo", function (request, response) {
 });
 
 app.post("/CityInformation", function (request, response) {
-    ps.addCommand("./scripts/Get")
+    ps.addCommand("./scripts/GetCityInformation.ps1", [ {
+        name: 'CityName',
+        value: request.body.CityName
+    } ])
+    ps.invoke().then(output => {
+        var cityInformation = JSON.parse(output)
+        response.render('CityInformation', {
+            result: cityInformation
+        })
+    })
 })
 app.listen(3000);
 console.log("Your Application is running!")

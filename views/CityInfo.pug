@@ -27,9 +27,9 @@ style.
     background-color: #f2f2f2;
     padding: 20px;
     }
-h3 User ID Form
+h3 Your City Name
 div
     form(action='/CityInformation' method="post")
-        label(for='loginID') Windows Login ID
-        input#loginID(type='text', name='sAMAccountName', placeholder='Your Login ID..')
+        label(for='cityName') Search City
+        input#loginID(type='text', name='CityName', placeholder='City Name...')
         input(type='submit', value='Submit')

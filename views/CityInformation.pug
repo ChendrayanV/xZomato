@@ -1,0 +1,40 @@
+doctype html
+style.
+    #myStyle {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    #myStyle td,
+    #myStyle th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    }
+    #myStyle tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+    #myStyle tr:hover {
+    background-color: #ddd;
+    }
+    #myStyle th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    }
+h3 Zomato City Information
+table#myStyle
+    tbody
+        tr
+            th ID
+            th City Name 
+            th Country Name
+            th Flag 
+        each r in result 
+            tr
+                td=r.id 
+                td=r.name
+                td=r.country_name
+                td
+                    img(src=r.country_flag_url, alt="de")
