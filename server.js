@@ -16,6 +16,13 @@ app.get("/", function (request, response) {
     response.render("index");
 });
 
+app.get("/GetCategories", function (request, response) {
+    ps.addCommand('./Scripts/GetCategories.ps1')
+    ps.invoke().then(output => {
+        response.send(output)
+    })
+});
+
 app.get("/NearByRestaurant", function (request, response) {
     response.render("NearByRestaurant");
 });
