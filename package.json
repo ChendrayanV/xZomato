@@ -1,0 +1,30 @@
+{
+  "name": "xzomato",
+  "version": "1.0.0",
+  "description": "A demo node application using Zomato API and PowerShell",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChendrayanV/xZomato.git"
+  },
+  "keywords": [
+    "Zomato",
+    "PowerShell",
+    "NodeJs"
+  ],
+  "author": "Chendrayan Venkatesan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChendrayanV/xZomato/issues"
+  },
+  "homepage": "https://github.com/ChendrayanV/xZomato#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
+}
